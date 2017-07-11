@@ -1,0 +1,21 @@
+﻿@model WebAppCore.Models.UserModel
+@{
+    ViewData["Title"] = "User SignUp";
+}
+
+<h1>User SignUp</h1>
+<hr />
+<form asp-controller="Home" asp-action="UserSignUp" method="post">
+    <div>        
+        Username: <input type="text" asp-for="Username" class="form-control" />
+    </div>
+    <div>
+        Username: <input type="text"  asp-for="Name" class="form-control"/>
+    </div>
+    <div>
+        Address: <textarea asp-for="Address" class="form-control"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+</form>
