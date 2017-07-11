@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebAppCore.Models;
 
 namespace WebAppCore.Controllers
 {
@@ -28,6 +29,17 @@ namespace WebAppCore.Controllers
         }
 
         public IActionResult Error()
+        {
+            return View();
+        }
+
+        public IActionResult UserSignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult UserSignUp(UserModel model)
         {
             return View();
         }
